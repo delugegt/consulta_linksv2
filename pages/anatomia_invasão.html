@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia de uma invasão</title>
+
+    <link rel="stylesheet" text="text/css" href="../global.css">
+
+    <style>
+        .container {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+          <!--menu de navegação-->
+          <nav>
+            <a href="../pages/anatomia_invasão.html" target="_blank">Anatomia de uma invasão</a>
+            <a href="../pages/metodologia_pentest.html" target="_blank">Metodologias pentest</a>
+            <a href="../pages/procedimentos.html" target="_blank">Procedimentos</a>
+            <a href="../pages/conclusao.html" target="_blank">Conclusão</a>
+          </nav>
+        </div>
+      </header>
+<div class="container">
+<h2>Anatomia de uma invasão </h2>
+<h3>Perfil </h3>
+<p>
+    Podemos notar uma gama de ferramentas que permitem a realização de um reconhecimento de sua rede. Não vamos ficar impressionados, por várias ferramentas são lançadas e incrementadas diariamente. 
+    Intervalo de endereços
+    Espaços de nomes
+    Coleta de Informações
+    <h4>Técnicas: </h4>
+    <ul>
+        <li>Cod.Fonte aberto</li>
+        <li>Whois </li>
+        <li>Transferência de zona DNS</li>
+    </ul>
+    
+    
+</p>
+    <h3>
+        Varredura 
+    </h3>
+    
+    <p>
+    Podemos identificar várias técnicas e ferramentas necessárias para a varredura do ping. Assim detectam-se os sistemas ativos e destacar com precisão os alvos em potencial. 
+    A detecção consegue também definir sistemas operacionais e assim, os atacantes podem supor cenários de vulnerabilidades que podem explorar.
+    Identificação dos Serviços de Escuta 
+    Entradas promissoras 
+</p>
+<h4>Técnicas:</h4>
+    <ul>
+        <li>Pins</li>
+        <li>S.O</li>
+        <li>Portas</li>
+        <li>TCP/UDP</li>
+    </ul>
+
+    
+    
+    <h3>Enumeração</h3>
+    <p>Arquiteturas fundamentais do sistema operacional. Enumerar as portas de entrada, a fim de facilitar as deduções de credenciais.
+        Serviços do sistema operacional com vazamentos. Podem divulgar muitas informações, e procurar junto ao fornecedor a maneira de habilitar esses serviços, pode ser a chave.
+        Identificar compartilhamento de recursos mal protegidos 
+        Contas de usuários válidas 
+    </p>
+    
+    <h4>Técnicas:</h4>
+    <ul>
+        <li>Listagem de contas de usuário</li>
+        <li>Listagem de compartilhamento de arquivos </li>
+        <li>Identificação de aplicações</li>
+    </ul>
+    
+    <h3>Ganho de acesso</h3>
+    <p>
+    
+    Utilizar subsídios para acessar o alvo
+</p>
+    <h4>Técnicas:</h4>
+    
+    <ul>
+        <li>Escuta de senha</li>
+        <li>Captura de arquivo de senha </li>
+        <li>Estouro de buffer</li>
+    </ul>
+    
+    <h3>
+        Furto
+
+    </h3>
+    
+    <p>
+    Coleta de dados sensíveis e/ou senhas de sistemas críticos
+</p>
+<h4>Técnicas:</h4>
+    <ul>
+        <li>    Coleta de senha em texto limpo</li>
+    </ul>
+
+<h3>Escalada de privilégio</h3>
+<p>
+    
+    Obter controle pleno do sistema, através dos acessos.
+</p>
+<h4>Técnicas:</h4>
+    <ul>
+        <li>Decifração de senhas</li>
+    </ul>
+    <h3>
+        Encobrimento de rastros 
+    </h3>
+    <p>
+        Ocultar a apropriação do alvo dos administradores
+    </p>
+    
+    <ul>
+        <li>Limpeza de registros(logs)</li>
+        <li>Ocultar ferramentas</li>
+    </ul>
+    
+    <h3>Criação de porta dos fundos</h3>
+    
+<p>
+    Garantir acesso privilegiado sobre certas partes do sistema para definir portas dos fundos a quem iremos recorrer 
+</p>
+    <ul>
+        <li>Criação de contas de usuários falsos </li>
+        <li>Infecção de arquivos de inicialização </li>
+        <li>Serviços de controle remoto</li>
+        <li>Substituição de aplicação por cavalo de tróia</li>
+    </ul>
+    
+    
+    
+    <h3>Recusa de serviço</h3>
+    <p>Provoca a recusa do serviço</p>
+    <h4>
+        Técnicas: 
+    </h4>
+    <ul>
+        <li>Inundação SYN </li>
+        <li>Técnicas ICMP </li>
+        <li>DDoS</li>
+    </ul>
+</div>
+</body>
+</html>

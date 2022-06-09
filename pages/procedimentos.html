@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos</title>
+
+    <link rel="stylesheet" type="text/css" href="../global.css">
+
+    <style>
+        .container{
+            width: 600px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="menu">
+          <!--menu de navegação-->
+          <nav>
+            <a href="../pages/anatomia_invasão.html" target="_blank">Anatomia de uma invasão</a>
+            <a href="../pages/metodologia_pentest.html" target="_blank">Metodologias pentest</a>
+            <a href="../pages/procedimentos.html" target="_blank">Procedimentos</a>
+            <a href="../pages/conclusao.html" target="_blank">Conclusão</a>
+          </nav>
+        </div>
+      </header>
+
+<div class="container">
+      <h2>
+        Procedimentos
+      </h2>
+      
+<h3>
+    Case 1: Procedimento de inoculação de malware 
+</h3>
+    
+<p>
+Coleta de artefatos maliciosos (keylloger RAT - download automatizado de .exe e .msi através de userunit.exe e winlogon.exe no caso de Windows e invoke-shellcode habitualmente bloqueado)
+Processo de infecção 
+dump de memória para saber sobre tudo o que é descartado na memória e que é jogado para pagefile.sys
+distribuição de phishing, ransomware ou malware (exmplo: emotet - malware bancário desde2018 no mercado)
+</p>
+
+<h3>Case 2: Procedimento para uma verificação básica se está ok a certificação</h3>
+<p>
+Setup BurpSuite
+Gerar um certificado (download ou salvar) com domínio e instalar em um device
+Proxy entre o device e burp
+Conectar o app em seu respectivo domínio
+CONSEGUIU? Então pinou errado.
+Não conseguiu? Verificação básica finalizada
+</p>
+<h3>
+Case 3: Procedimento básico de criação de um objeto malicioso
+</h3>
+<p>
+Realizar assinatura 
+Realizar compactação
+Realizar compilação 
+downloads por LOLBA
+OSINT 
+Aplicação da técnica man-in-the-Middle realizando o procedimento de inoculação de malware em algum arquivo trafegado pela rede
+</p>
+</div>
+
+
+    
+</body>
+</html>

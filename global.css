@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.menu { 
+    background-color: black; 
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    margin: auto;  
+}
+.menu a{
+    color: white;
+    padding: 5px;      
+    text-decoration: none;
+    
+}
+
+
