@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferramentas</title>
     <link rel="stylesheet"  type="text/css" href="../global.css">
+  <style>
+        th {
+      border: 3px solid black;
+    }
+    td { 
+      border: 3px solid black;
+    }
 
+  </style>
 </head>
 <body>
     <!--menu de navegação-->
@@ -24,24 +32,26 @@
       </header>
 
       <h3>Ferramentas</h3>
-      <ul>
-        <li><a href="https://github.com/NickstaDB/patch-apk" target="_blank">BUNDLE PARA TOOLKIT</a></li>
-        <li><a href="https://github.com/skylot/jadx" target="_blank">DECOMPILADOR JAVA ANDROID </a></li>
-        <li><a href="https://letsencrypt.org/pt-br/" target="_blank">ENCRIPTADOR</a></li>
-        <li><a href="http://www.crypto-it.net/eng/attacks/krack.html" target="_blank">DECRIPTADOR</a></li>
-        <li><a href="https://nmap.org/" target="_blank">NMAP</a></li>
-        <li><a href="https://www.krackattacks.com/" target="_blank">KRACKATACK</a></li>
-        <li><a href="https://www.spooftel.com/" target="_blank">SPOOFING</a></li>
-        <li><a href="https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2021-22853&vector=AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L&version=3.1&source=TWCERT/CC" target="_blank">NIST</a></li>
-        <li><a href="https://keepass.info/" target="_blank">GERENCIADOR DE SENHAS </a></li>
-        <li><a href="https://developer.android.com/studio/command-line/adb" target="_blank">ADB</a></li>
-        <li><a href="http://fwbuilder.sourceforge.net/" target="_blank">Firewall Builder</a></li>
-        <li><a href="https://www.openwall.com/john/" target="_blank">John the Ripper password cracker</a></li>
-        <li><a href="https://www.opensecurityarchitecture.org/cms/index.php" target="_blank">OSA</a></li>
-        <li><a href="https://www.nomoreransom.org/pt/index.html" target="_blank">No more ransomware</a></li>
-        <li><a href="https://www.veracrypt.fr/code/VeraCrypt/" target="_blank">Veracript</a></li>
-        <li><a href="https://www.ciphershed.org/" target="_blank">CipherShed</a></li>
-        <li><a href="https://github.com/sensepost/objection" target="_blank">Toolkit mobile</a></li>
-        </ul>
+        <table width="850px">
+          <th>Técnica</th>
+          <th>Área de conhecimento</th>
+          <th>Ferramentas</th>
+          <tr>
+            <td>Ánálise de Cod.Fonte aberto, Whois, Identificação de S.O, Listagem de portas, Listagens TCP/UDP Listagem de contas de Usuário, Listagem de compartilhamento de arquivos, Identificação de aplicações </td>
+            <td>Reconhecimento</td>
+            <td rolspan="1"><a href="https://github.com/sensepost/objection">objection</a> ,<a href="./detalhes_ferramentas.html">whois</a> ,<a href="./detalhes_ferramentas.html">Traceroute</a> ,<a href="./detalhes_ferramentas.html">Dig</a> ,<a href="./detalhes_ferramentas.html">Ping</a> </td>            
+          </tr>
+          <tr>
+            <td>Escuta de senha, Captura de arquivo de senha, Coleta de senha em texto limpo, Decifração de senhas, Limpeza de registros(logs)</td>
+            <td>Acesso inicial</td>
+            <td><a href="https://nmap.org/">NMAP</a> ,<a href="https://developer.android.com/studio/command-line/adb">ADB</a> ,<a href="./detalhes_ferramentas.html">NETCAT</a> ,<a href="https://github.com/skylot/jadx">JADX</a> ,<a href="./detalhes_ferramentas.html">DIRB</a> </td>
+          </tr>
+          <tr>
+            <td>DDOS</td>
+            <td>Desenvolvimento de recursos</td>
+            <td><a href="https://www.openwall.com/john/">JHON THE RIPPER</a> ,<a href="./detalhes_ferramentas.html"> MPACK</a></td>            
+          </tr>
+        </table>
+
 </body>
 </html>

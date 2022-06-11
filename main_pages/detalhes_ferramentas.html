@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhe das ferramentas</title>
+<style>
+    body {
+    font-family: 'Roboto Mono', monospace;
+
+      /*largura*/
+  
+  font-family: 'Roboto Mono', monospace;
+  /*comçar sempre da esquerda, necessário para o carrossel*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+    .menu { 
+    background-color: black; 
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    margin: auto;  
+}
+.menu a{
+    color: white;
+    padding: 5px;      
+    text-decoration: none;
+}
+.content {
+    width: 850px;
+    text-align: justify;
+}
+
+
+</style>
+
+</head>
+<body>
+       <!--menu de navegação-->
+    <header>
+        <div class="menu">
+          <!--menu de navegação-->
+          <nav>
+            <a href="../main.html">Introdução</a>
+            <a href="../pages/anatomia_invasão.html">Anatomia de uma invasão</a>
+            <a href="../pages/metodologia_pentest.html">Metodologias pentest</a>
+            <a href="../pages/procedimentos.html">Procedimentos</a>
+            <a href="../pages/conclusao.html">Conclusão</a>            
+          </nav>
+        </div>
+      </header>
+
+<div class="content">
+    <h3>Detalhamento das ferramentas e técnicas</h3>
+    
+      
+      <h4>Ping</h4>
+        
+         <p> -ping "target"</p>
+          <p>-man ping on Linux</p>
+
+  <p><h4>traceroute</h4>
+      
+  -traceroute "destination"
+  -man traceroute
+  </p>
+
+
+  <h4>whois</h4>
+  <p>-sudo apt update && sudo apt-get install whois</p>
+  <p>-whois "domain"</p>
+  <p>Ex: .com ou .co.uk </p>
+    
+  <p>
+   <h4>Dig </h4> 
+  -dig "domain" @"dns-server-ip"
+</p>
+
+  <p><h4>Adb </h4>
+    
+      O Android Debug Bridge (adb) é uma ferramenta de linha de comando versátil que permite a comunicação com um dispositivo. O comando adb facilita uma variedade de ações do dispositivo, como instalar e depurar apps, e fornece acesso a um shell Unix que pode ser usado para executar diversos comandos em um dispositivo.
+    </p>
+  <h4>nmap</h4>
+      <p>O Nmap ("Network Mapper") é um utilitário de código aberto e gratuito para a detecção de rede e auditoria de segurança. Muitos sistemas e administradores de rede também o acham útil para tarefas como inventário de rede, gerenciamento de cronogramas de upgrade de serviço e monitoramento do tempo de atividade do host ou serviço.</p>
+      <p>Exemplo1: nmap -sS -sV -A "host ip" -p- --script vuln</p>
+      <p>Exemplo2: Discovery scan Usa Nmap pra escanear portas TCP, escaneia também UDP e suas portas, Ping  -PI (determina um padrão PING ICMP sweep) manda uma echo reply, que quando retornado(considerada “up”) </p>
+      <p>Exemplo3:nmap "host ip"</p>
+      
+  <p>
+    <h4>dirb</h4>  
+    
+      DIRB é um Scanner de Conteúdo da Web. Ele procura por existente (e/ou oculta) Objetos web. Ele basicamente funciona lançando um dicionário bases de ataque contra um servidor web e analizando a resposta
+      Exemplo: dirb https://"host ip" /usr/share/dirb/wordlists/big.txt      
+  </p>
+  
+    <h4>netcat</h4>  
+  <p> Netcat é uma ferramenta de linha de comando responsável pela leitura e escrita de dados na rede. Para trocar dados, a Netcat usa os protocolos de rede TCP/IP (SYN/ACK)e UDP.  
+     
+      <p>Exemplo: nc -l 1234 </p>
+  
+  <h4>jadX</h4>
+    
+      decompilador Java que procura strings, salva arquivo decompilado, oferece opções de CLI para busca com grep e etc</p>
+  <p><h4>enum4linux</h4>
+      
+      Enum4linux é uma ferramenta para enumerar informações do Windows e do Samba sistemas.
+      obs: O Samba é um software gratuito e de código aberto que permite que os arquivos sejam compartilhados entre sistemas Windows e Linux de forma simples e fácil. Para ser exato, é uma implementação de código aberto do protocolo SMB/CIFS.
+      dump de memória -> volatility3 plugin malfind (data carving/ photo rec com: .exe .dll 
+  </p>
+  <h4>mpack</h4>
+  <p>    compacta um arquivo no formato MIME para inserir anexos e canalizar o envio de um "malicious.txt", por exemplo. 
+    Port services e suas portas. Obs: as mais expostas como HTTP, telnet, SSH, and FTP</p>    
+  <p>-data import </p>    
+  <p>-sudo msfconfig </p>    
+  <p>-help</p>    
+
+  <h4>DDoS</h4>
+  <p>
+  É realizado um redirecionamento de uma mensagem ICMP(Mensagem subdividida) com parâmetro inválido, pelo firewall ou próprio roteador, para saturar os enlaces de rede.  A Técnica Smurf é um bom exemplo disso já que viabiliza o consumo de largura da banda através de pacotes forjados ICMP ECHO( amplificador que replica um ping no canal broadcast da vitima) desde o atacante até o alvo.
+</p>
+    <h4>Limpeza de registros(logs)</h4>  
+    <p>Pode ser considerado a possibilidade de apagar os logs do host remoto, contudo pode gerar um Event Log no SO, podendo alertar ainda mais os sistema. Portanto recomenda-se o uso de gerenciadores de tarefas que possibilitam ” acerta ou erra” a exclusão de logs, e manualmente, alterar os diversos arquivos de log, em uma busca </p>
+      
+      
+  
+
+
+
+ </p>
+</div>
+     
+
+      <h3>
+        Referencias Bibliográficas
+      </h3>
+      <ul>
+        <li><a href="https://attack.mitre.org/tactics/TA0043/" target="_blank">TA0043/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1592/003/" target="_blank"> T1592/003/</a></li>
+        <li><a href="https://attack.mitre.org/techniques/T1596/005/" target="_blank">T1596/005/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1592/004/" target="_blank">T1592/004/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1590/" target="_blank">T1590/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1592/002/" target="_blank">T1592/002/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1589/001/" target="_blank">T1589/001/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1557/" target="_blank"> T1557/</a></li>
+        <li><a href="https://attack.mitre.org/techniques/T1555/" target="_blank">T1555/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1110/001/" target="_blank">T1110/001/</a> </li>
+        <li><a href="https://attack.mitre.org/techniques/T1583/005/" target="_blank">T1583/005/</a> </li>
+      </ul>
+      
+</body>
+</html>

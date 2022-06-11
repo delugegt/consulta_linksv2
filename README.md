@@ -1,8 +1,6 @@
-# Atividades
+# Projeto Integrador
 
-- [X] Elaborar todas as páginas
-- [X] Colocar o conteúdo textual
-- [ ] Configurar estilos globais
-- [ ] Configurar estilos individuais
-- [X] Formatar texto
-- [ ] Tela de login
+
+### Zumbi dos palmares, 2022
+
+Este é um projeto desenvolvido para a continuidade e término do curso da primeira turma se técnologo em Segurança da Informação. Esperamos alimentar e repassar esse conteúdo sempre que possível.
