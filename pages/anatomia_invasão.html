@@ -19,10 +19,11 @@
         <div class="menu">
           <!--menu de navegação-->
           <nav>
-            <a href="../pages/anatomia_invasão.html" target="_blank">Anatomia de uma invasão</a>
-            <a href="../pages/metodologia_pentest.html" target="_blank">Metodologias pentest</a>
-            <a href="../pages/procedimentos.html" target="_blank">Procedimentos</a>
-            <a href="../pages/conclusao.html" target="_blank">Conclusão</a>
+            <a href="../main.html">Introdução</a>
+            <a href="../pages/anatomia_invasão.html">Anatomia de uma invasão</a>
+            <a href="../pages/metodologia_pentest.html">Metodologias pentest</a>
+            <a href="../pages/procedimentos.html">Procedimentos</a>
+            <a href="../pages/conclusao.html">Conclusão</a>
           </nav>
         </div>
       </header>
@@ -30,10 +31,9 @@
 <h2>Anatomia de uma invasão </h2>
 <h3>Perfil </h3>
 <p>
-    Podemos notar uma gama de ferramentas que permitem a realização de um reconhecimento de sua rede. Não vamos ficar impressionados, por várias ferramentas são lançadas e incrementadas diariamente. 
+    Podemos notar uma gama de ferramentas que permitem a realização de um reconhecimento de sua rede. Não vamos ficar impressionados, pois existem várias ferramentas que praticamente são lançadas e incrementadas diariamente. 
     Intervalo de endereços
-    Espaços de nomes
-    Coleta de Informações
+    Em sua maioria, a coleta de dados para definição de perfil consiste em adquirir os Intervalos de endereços, espaços de nomes, coleta de Informações e etc.
     <h4>Técnicas: </h4>
     <ul>
         <li>Cod.Fonte aberto</li>
@@ -48,10 +48,11 @@
     </h3>
     
     <p>
-    Podemos identificar várias técnicas e ferramentas necessárias para a varredura do ping. Assim detectam-se os sistemas ativos e destacar com precisão os alvos em potencial. 
-    A detecção consegue também definir sistemas operacionais e assim, os atacantes podem supor cenários de vulnerabilidades que podem explorar.
-    Identificação dos Serviços de Escuta 
-    Entradas promissoras 
+        Podemos identificar várias técnicas e ferramentas necessárias para a varredura do ping. Assim detectam-se os sistemas ativos e podemos destacar com precisão os alvos em potencial. 
+A detecção consegue também definir sistemas operacionais e, assim os atacantes podem supor cenários de vulnerabilidades que podem explorar.
+
+        
+A identificação dos Serviços de Escuta e listagem de possíveis entradas promissoras é a “guideline” central para esse processo.
 </p>
 <h4>Técnicas:</h4>
     <ul>
@@ -64,10 +65,10 @@
     
     
     <h3>Enumeração</h3>
-    <p>Arquiteturas fundamentais do sistema operacional. Enumerar as portas de entrada, a fim de facilitar as deduções de credenciais.
-        Serviços do sistema operacional com vazamentos. Podem divulgar muitas informações, e procurar junto ao fornecedor a maneira de habilitar esses serviços, pode ser a chave.
-        Identificar compartilhamento de recursos mal protegidos 
-        Contas de usuários válidas 
+    <p>Basicamente estamos falando de listar especificar as arquiteturas fundamentais de um sistema operacional. Consiste em relacionar as portas de entrada, a fim de facilitar técnicas como as deduções de credenciais e demais apresentadas nesse documento.
+        Serviços do sistema operacional com vazamentos podem divulgar muitas informações, e procurar junto ao fornecedor e seus diagnósticos técnicos, manuais e rede social e a maneira de habilitar outros serviços, pode ser a chave.
+        O que pode facilitar em sua maioria algumas técnicas é o procedimento de identificar compartilhamento de recursos mal protegidos, como Contas de usuários válidas. 
+        
     </p>
     
     <h4>Técnicas:</h4>
@@ -80,7 +81,17 @@
     <h3>Ganho de acesso</h3>
     <p>
     
-    Utilizar subsídios para acessar o alvo
+        Utilizar subsídios(ferramentas) para acessar o alvo. Existem dois meios de ganhar o acesso: Remoto e local.
+        Acesso remoto
+        Dois principais métodos para contornar a segurança de um sistema remotamente. 
+        •	Explorar um serviço de escuta
+        Basicamente é através de uma identificação de usuário, que permite/solicita a invasão do sistema.  Vale lembrar que se o serviço não estiver escutando não pode ser penetrado remotamente. 
+        •	Ataques de execução remota iniciada pelo usuário 
+        Acessar um site mal-intencionado e o browser executar um código mal-intencionado que o conecte a um site hostil.
+        Isso pode permitir que um invasor acesse seu sistema, isso enquanto o usuário navega pela web com permissões root.
+        1.	Acesso local
+        A maioria dos atacantes tenta obter acesso local de maneira remota. Em sua maioria o acesso local depende da escalada de privilégio a fim de tornar-se root. Contudo o root não é o único objetivo nesse caso, pois se estiver interessado em ganhar acesso a um banco de dados Oracle, ele pode precisar apenas do ID do Oracle. 
+        
 </p>
     <h4>Técnicas:</h4>
     
@@ -96,7 +107,9 @@
     </h3>
     
     <p>
-    Coleta de dados sensíveis e/ou senhas de sistemas críticos
+        O furto é o processo do invasor (que já obteu acesso administrador) coletar o máximo de informações que possam ser aproveitadas para outras conquistas no sistema. 
+        Por exemplo, pode ser atingida apenas um passo da estrutura geral da rede, com o objetivo de instalar ferramentas adicionais e espalhar sua influência. A coleta de dados sensíveis e/ou senhas de sistemas críticos é o motivador de risco desse tema.
+        
 </p>
 <h4>Técnicas:</h4>
     <ul>
@@ -106,7 +119,11 @@
 <h3>Escalada de privilégio</h3>
 <p>
     
-    Obter controle pleno do sistema, através dos acessos.
+    Aqui o grande objetivo é obter controle pleno do sistema, através dos acessos.
+Podemos citar técnicas baseadas em injeção de dll, ou decifração de senhas, que funcionam com bastante sucesso, desde os anos 2000. 
+O fato é que tais técnicas em geral precisam ser executadas localmente no sistema do alvo. 
+Considerando a obtenção de acessos provindos de grupos de operadores internos ou contas de servidor da internet e demais perfis, qualquer atacante teria acesso a praticamente qualquer coisa que desejam.
+
 </p>
 <h4>Técnicas:</h4>
     <ul>
@@ -116,7 +133,7 @@
         Encobrimento de rastros 
     </h3>
     <p>
-        Ocultar a apropriação do alvo dos administradores
+        Baseia-se em instalar ferramentas para garantir que cada acesso possa ser obtido futuramente, como portas dos fundos. Estamos falando, na prática, de ocultar a apropriação do “alvo” dos administradores.
     </p>
     
     <ul>
@@ -124,7 +141,7 @@
         <li>Ocultar ferramentas</li>
     </ul>
     
-    <h3>Criação de porta dos fundos</h3>
+<h3>Criação de porta dos fundos</h3>
     
 <p>
     Garantir acesso privilegiado sobre certas partes do sistema para definir portas dos fundos a quem iremos recorrer 
@@ -139,7 +156,11 @@
     
     
     <h3>Recusa de serviço</h3>
-    <p>Provoca a recusa do serviço</p>
+    <p>
+        Podemos destacar dois tipos principais de ataques DOS, sendo o consumo de banda de rede, no qual o atacante consumirá toda a largura de banda disponível em uma determinada rede(local e remotamente). E a inanição de recursos, onde um recurso inutilizável é executado de forma programática, quebrando o sistema, podendo enche-lo os processos ou travando-os. 
+Em resumo, o atacante quer provocar a recusa de serviço computacional.
+
+    </p>
     <h4>
         Técnicas: 
     </h4>
